@@ -1,0 +1,66 @@
+@use "sass:list";
+@use "sass:string";
+
+@function remove-spaces($string) {
+  $index: string.index($string, " ");
+
+  @if $index {
+    @return string.slice($string, 1, $index - 1) +
+      remove-spaces(string.slice($string, $index + 1));
+  }
+
+  @return $string;
+}
+
+$fonts-config: (
+  "Cormorant": (
+    ("Light", 300, "normal"),
+    ("LightItalic", 300, "italic"),
+    ("Regular", 400, "normal"),
+    ("Italic", 400, "italic"),
+    ("Medium", 500, "normal"),
+    ("MediumItalic", 500, "italic"),
+    ("SemiBold", 600, "normal"),
+    ("SemiBoldItalic", 600, "italic"),
+    ("Bold", 700, "normal"),
+    ("BoldItalic", 700, "italic"),
+  ),
+  "Cormorant Infant": (
+    ("Light", 300, "normal"),
+    ("LightItalic", 300, "italic"),
+    ("Regular", 400, "normal"),
+    ("Italic", 400, "italic"),
+    ("Medium", 500, "normal"),
+    ("MediumItalic", 500, "italic"),
+    ("SemiBold", 600, "normal"),
+    ("SemiBoldItalic", 600, "italic"),
+    ("Bold", 700, "normal"),
+    ("BoldItalic", 700, "italic"),
+  ),
+  "PT Sans": (
+    ("Regular", 400, "normal"),
+    ("Italic", 400, "italic"),
+    ("Bold", 700, "normal"),
+    ("BoldItalic", 700, "italic"),
+  ),
+);
+
+@each $family-name, $variants in $fonts-config {
+  $family-path: remove-spaces($family-name);
+
+  @each $variant in $variants {
+    $variant-name: list.nth($variant, 1);
+    $variant-weight: list.nth($variant, 2);
+    $variant-style: list.nth($variant, 3);
+
+    $file-path: "../fonts/#{$family-path}/#{$family-path}-#{$variant-name}.ttf";
+
+    @font-face {
+      font-family: "#{$family-name}";
+      font-style: $variant-style;
+      font-weight: $variant-weight;
+      font-display: swap;
+      src: url($file-path) format("truetype");
+    }
+  }
+}

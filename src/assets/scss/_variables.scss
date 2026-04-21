@@ -1,1 +1,83 @@
-$color-primary: #3498db;
+// ==========================================================================
+// FONTS
+// ==========================================================================
+$font-primary: 'PT Sans', sans-serif;
+$font-secondary: 'Cormorant', serif;
+$font-accent: 'Cormorant Infrant', serif;
+
+// ==========================================================================
+// COLORS
+// ==========================================================================
+// Primary Palette
+$color-primary: #417A82;
+$color-secondary: #052E4C;
+$color-accent: #B84C74;
+
+// Neutral / Backgrounds
+$color-white: #FFFFFF;
+$color-light-bg: #F2F6F7;
+$color-tint-bg: #E3F6F5;
+$color-dark: #262626;
+
+// Text & Icons specific
+$color-text-muted: $color-primary;
+$color-text-main: $color-secondary;
+$color-text-on-dark: $color-white;
+$color-text-accent: $color-accent;
+
+// ==========================================================================
+// LAYOUT
+// ==========================================================================
+$container-max-width: 1120px;
+$grid-columns: 12;
+$grid-gap: 32px;
+
+// ==========================================================================
+// TYPOGRAPHY
+// ==========================================================================
+
+// Common Text
+$font-size-base: 16px;
+$font-size-small: 13px;
+$font-weight-regular: 400;
+
+// H2 Titles
+// Type 1 (Decorative/Background)
+$h2-type1-size: 300px;
+$h2-type1-color: rgba($color-white, 0.05);
+$h2-type1-font: $font-secondary;
+$h2-type1-style: italic;
+
+// Type 2 (Standard Block)
+$h2-type2-size: 20px;
+$h2-type2-color: $color-secondary;
+$h2-type2-font: $font-primary;
+$h2-type2-transform: uppercase;
+$h2-type2-weight: 400;
+
+// Type 3 (High Contrast)
+$h2-type3-size: 62px;
+$h2-type3-font: $font-secondary;
+$h2-type3-weight: 700;
+$h2-type3-color-light: $color-secondary; // for bg #F2F6F7
+$h2-type3-color-dark: $color-white;     // for bg #417A82
+
+// ==========================================================================
+// BUTTONS
+// ==========================================================================
+
+// Button Primary (Accent)
+$btn-primary-bg: $color-accent;
+$btn-primary-text: $color-white;
+$btn-primary-padding: 11.5px 24px;
+
+// Button Outline (Transparent)
+$btn-outline-bg: transparent;
+$btn-outline-text: $color-white;
+$btn-outline-border: 1px solid $color-white;
+$btn-outline-padding: 10.5px 23px;
+
+// Button Secondary (Light)
+$btn-secondary-bg: $color-white;
+$btn-secondary-text: $color-secondary;
+$btn-secondary-padding: 11.5px 24px;
