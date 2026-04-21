@@ -1,0 +1,12 @@
+
+node_modules/
+npm-debug.log*
+package-lock.json
+
+dist/
+*.local
+.vite/
+
+public/assets-raw/images/
+
+.vscode/*
