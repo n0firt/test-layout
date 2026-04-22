@@ -1,0 +1,18 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+.section-popular {
+  position: relative;
+
+  &__background {
+    @include wide-section(half, full);
+    @include section-bg;
+    background-color: $color-secondary;
+  }
+
+  &__background-2 {
+    @include wide-section(half, none);
+    @include section-bg;
+    background-color: $color-primary;
+  }
+}

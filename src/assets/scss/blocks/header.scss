@@ -1,0 +1,19 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+.header {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 152px;
+  width: 100%;
+  color: $color-white;
+
+  &__content {
+    @include container;
+    display: flex;
+    justify-content: end;
+    padding: 56px 0;
+  }
+}

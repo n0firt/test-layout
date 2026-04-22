@@ -1,0 +1,13 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+.section-partnership {
+  position: relative;
+  margin-top: 130px;
+
+  &__background {
+    @include wide-section(none, full);
+    @include section-bg;
+    background-color: $color-secondary;
+  }
+}

@@ -1,0 +1,12 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+.section-sales {
+  position: relative;
+
+  &__background {
+    @include wide-section(half, half);
+    @include section-bg;
+    background-color: $color-light-bg;
+  }
+}

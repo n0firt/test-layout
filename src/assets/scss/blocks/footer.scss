@@ -1,0 +1,10 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+main footer {
+  // @include section-wide-left-full;
+  // @include section-wide-right-full;
+  min-height: 300px;
+  background: $color-dark;
+  color: $color-white;
+}

@@ -1,9 +1,14 @@
 @use "@/assets/scss/reset";
 @use "@/assets/scss/fonts";
+@use "@/assets/scss/layout";
 @use "@/assets/scss/common";
-@use "@/assets/scss/elements/nav";
-@use "@/assets/scss/adaptive";
-
-body {
-  min-height: 100vh;
-}
+@use "@/assets/scss/blocks/nav";
+@use "@/assets/scss/blocks/header";
+@use "@/assets/scss/blocks/footer";
+@use "@/assets/scss/sections/main-slider";
+@use "@/assets/scss/sections/popular";
+@use "@/assets/scss/sections/best-offers";
+@use "@/assets/scss/sections/step-form";
+@use "@/assets/scss/sections/partnership";
+@use "@/assets/scss/sections/sales";
+@use "@/assets/scss/sections/examples";

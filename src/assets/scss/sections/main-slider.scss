@@ -1,0 +1,13 @@
+@use "@/assets/scss/variables" as *;
+@use "@/assets/scss/mixins" as *;
+
+.section-main-slider {
+  position: relative;
+  padding: 168px 0 53px 0;
+
+  &__background {
+    @include wide-section(half, full);
+    @include section-bg;
+    background: linear-gradient(#000, transparent);
+  }
+}

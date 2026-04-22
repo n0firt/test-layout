@@ -1,0 +1,51 @@
+@use "@/assets/scss/variables" as *;
+
+@mixin container {
+  width: $container-max-width;
+  max-width: 100%;
+  margin: auto;
+}
+
+@mixin wide-section($left: none, $right: none) {
+  @if $left == none and $right == none {
+    width: $container-max-width;
+    margin-left: 0;
+    margin-right: 0;
+  } @else {
+    // 1. Базовое выражение
+    $side-gap-formula: "((100vw - #{$container-max-width}) / 2)";
+
+    // 2. Формируем выражение для левой стороны
+    $left-expr: "0px";
+    @if $left == half {
+      $left-expr: "(#{$side-gap-formula} - #{$nav-width-collapsed})";
+    } @else if $left == full {
+      $left-expr: "#{$side-gap-formula}";
+    }
+
+    // 3. Формируем выражение для правой стороны
+    $right-expr: "0px";
+    @if $right == half {
+      $right-expr: "(#{$side-gap-formula} / 2)";
+    } @else if $right == full {
+      $right-expr: "#{$side-gap-formula}";
+    }
+
+    // 4. Вывод свойств через единый вызов calc()
+    width: calc(#{$container-max-width} + #{$left-expr} + #{$right-expr});
+
+    @if $left != none {
+      margin-left: calc(-1 * (#{$left-expr}));
+    }
+    @if $right != none {
+      margin-right: calc(-1 * (#{$right-expr}));
+    }
+  }
+}
+
+@mixin section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
