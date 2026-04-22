@@ -1,6 +1,9 @@
+@use "@/assets/scss/reset";
+@use "@/assets/scss/fonts";
+@use "@/assets/scss/common";
+@use "@/assets/scss/elements/nav";
+@use "@/assets/scss/adaptive";
+
 body {
-  background: $color-primary;
-}
-h1 {
-  font-family: "Cormorant";
+  min-height: 100vh;
 }

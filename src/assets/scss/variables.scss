@@ -1,22 +1,22 @@
 // ==========================================================================
 // FONTS
 // ==========================================================================
-$font-primary: 'PT Sans', sans-serif;
-$font-secondary: 'Cormorant', serif;
-$font-accent: 'Cormorant Infrant', serif;
+$font-primary: "PT Sans", sans-serif;
+$font-secondary: "Cormorant", serif;
+$font-accent: "Cormorant Infrant", serif;
 
 // ==========================================================================
 // COLORS
 // ==========================================================================
 // Primary Palette
-$color-primary: #417A82;
-$color-secondary: #052E4C;
-$color-accent: #B84C74;
+$color-primary: #417a82;
+$color-secondary: #052e4c;
+$color-accent: #b84c74;
 
 // Neutral / Backgrounds
-$color-white: #FFFFFF;
-$color-light-bg: #F2F6F7;
-$color-tint-bg: #E3F6F5;
+$color-white: #ffffff;
+$color-light-bg: #f2f6f7;
+$color-tint-bg: #e3f6f5;
 $color-dark: #262626;
 
 // Text & Icons specific
@@ -31,6 +31,8 @@ $color-text-accent: $color-accent;
 $container-max-width: 1120px;
 $grid-columns: 12;
 $grid-gap: 32px;
+
+$nav-width-collapsed: 72px;
 
 // ==========================================================================
 // TYPOGRAPHY
@@ -60,7 +62,7 @@ $h2-type3-size: 62px;
 $h2-type3-font: $font-secondary;
 $h2-type3-weight: 700;
 $h2-type3-color-light: $color-secondary; // for bg #F2F6F7
-$h2-type3-color-dark: $color-white;     // for bg #417A82
+$h2-type3-color-dark: $color-white; // for bg #417A82
 
 // ==========================================================================
 // BUTTONS

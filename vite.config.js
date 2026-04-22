@@ -4,14 +4,6 @@ import path from "path";
 export default defineConfig({
   base: "./",
 
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/assets/scss/_variables" as *;\n@use "@/assets/scss/_mixins" as *;`,
-      },
-    },
-  },
-
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
