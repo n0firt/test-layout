@@ -94,13 +94,91 @@
     <main>
       <header class="header">
         <div class="header__content">
-          <span>Header</span>
+          <div class="header__button button button-primary">Заказать замер</div>
+          <div class="header__cart">
+            <svg class="header__cart-icon">
+              <use href="/src/assets/icons/sprite.svg#icon-header-cart"></use>
+            </svg>
+            <div class="header__cart-counter">3</div>
+          </div>
         </div>
       </header>
 
       <section class="section-main-slider">
-        <div class="section-main-slider__background"></div>
-        Купите что-то и еще шторы
+        <div class="section-main-slider__background">
+          <picture>
+            <img
+              class="section-main-slider__background-image section-main-slider__background-image--active"
+              src="/assets-raw/images/slider-image-1.jpg"
+              alt=""
+              data-slide-id="0"
+            />
+            <img
+              class="section-main-slider__background-image"
+              src="https://picsum.photos/1920/1080?random=1"
+              alt=""
+              crossorigin="anonymous"
+              data-slide-id="1"
+            />
+            <img
+              class="section-main-slider__background-image"
+              src="https://picsum.photos/1920/1080?random=2"
+              alt=""
+              crossorigin="anonymous"
+              data-slide-id="2"
+            />
+          </picture>
+          <div class="section-main-slider__background-filter"></div>
+        </div>
+
+        <div class="section-main-slider__content">
+          <div class="section-main-slider__carousel">
+            <div
+              class="section-main-slider__slide"
+              data-img="/assets-raw/images/slider-image-1.jpg"
+            >
+              <div class="section-main-slider__slide-title">
+                Купите <br />
+                <span>Что-то</span><br />
+                и еще <span>шторы</span>
+              </div>
+              <div class="section-main-slider__slide-text">
+                «Lorem» — производитель изделий для внутренней и внешней lorem
+              </div>
+              <div
+                class="section-main-slider__slide-button button button-secondary"
+              >
+                Калькулятор
+              </div>
+            </div>
+            <div class="section-main-slider__slide">
+              <div class="section-main-slider__slide-title">Test Title</div>
+              <div class="section-main-slider__slide-text">Test text</div>
+            </div>
+            <div class="section-main-slider__slide">
+              <div class="section-main-slider__slide-title">Test Title 2</div>
+              <div class="section-main-slider__slide-text">Test text 2</div>
+            </div>
+          </div>
+          <div class="section-main-slider__controls">
+            <button class="section-main-slider__left-arrow">
+              <svg class="section-main-slider__left-arrow-icon">
+                <use href="/src/assets/icons/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <div class="section-main-slider__counter">
+              <span class="section-main-slider__counter-current">1</span>/<span
+                class="section-main-slider__counter-length"
+                >3</span
+              >
+            </div>
+            <button class="section-main-slider__right-arrow">
+              <svg class="section-main-slider__left-arrow-icon">
+                <use href="/src/assets/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="section-popular">
@@ -130,7 +208,10 @@
         Примеры работ
       </section>
 
-      <footer class="footer">Footer</footer>
+      <footer class="footer">
+        <div class="footer__background"></div>
+        Footer
+      </footer>
     </main>
 
     <script type="module" src="/src/assets/main.js"></script>

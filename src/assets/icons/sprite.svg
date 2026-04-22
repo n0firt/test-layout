@@ -119,9 +119,21 @@
 	<path d="M0 0L6.38492 0.261685" stroke="currentColor" stroke-width="1.000000" transform="matrix(0.581238,0.813733,0.813733,-0.581238,6.50012,7.5)"/>
   </symbol>
 
-  <symbol></symbol>
-  <symbol></symbol>
-  <symbol></symbol>
+  <symbol id="icon-header-cart" viewBox="0 0 18.9189 15" fill="none">
+	<path d="M7.83784 3.24324L18.4189 3.24324L17.2432 9.90541L7.05405 9.90541L3.91892 0.5L0 0.5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.000000"/>
+	<circle cx="8.62127876" cy="13.4323139" r="1.06756759" stroke="currentColor" stroke-width="1.000000"/>
+	<circle cx="15.6759663" cy="13.4323139" r="1.06756759" stroke="currentColor" stroke-width="1.000000"/>
+  </symbol>
+
+  <symbol id="icon-arrow-left" viewBox="0 0 22.7071 22.707" fill="none">
+	<path d="M0 -0.5L16.0564 -0.5L16.0564 15.5564L15.0564 15.5564L15.0564 0L15.5564 0L15.5564 0.5L0 0.5L0 -0.5Z" fill="currentColor" fill-rule="nonzero" transform="matrix(-0.707107,0.707107,0.707107,0.707107,11.7071,0.353516)"/>
+  </symbol>
+
+  <symbol id="icon-arrow-right" viewBox="0 0 22.7071 22.707" fill="none">
+  	<path d="M0 -0.5L16.0564 -0.5L16.0564 15.5564L15.0564 15.5564L15.0564 0L15.5564 0L15.5564 0.5L0 0.5L0 -0.5Z" fill="currentColor" fill-rule="nonzero" transform="matrix(0.707107,0.707107,-0.707107,0.707107,11,0.353516)"/>
+  </symbol>
+
+
   <symbol></symbol>
   <symbol></symbol>
   <symbol></symbol>

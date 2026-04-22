@@ -3,7 +3,7 @@
 // ==========================================================================
 $font-primary: "PT Sans", sans-serif;
 $font-secondary: "Cormorant", serif;
-$font-accent: "Cormorant Infrant", serif;
+$font-accent: "Cormorant Infant", serif;
 
 // ==========================================================================
 // COLORS
@@ -68,18 +68,18 @@ $h2-type3-color-dark: $color-white; // for bg #417A82
 // BUTTONS
 // ==========================================================================
 
+$btn-padding: 10.5px 23px;
+$btn-text-size: 13px;
+
 // Button Primary (Accent)
 $btn-primary-bg: $color-accent;
 $btn-primary-text: $color-white;
-$btn-primary-padding: 11.5px 24px;
 
 // Button Outline (Transparent)
 $btn-outline-bg: transparent;
 $btn-outline-text: $color-white;
 $btn-outline-border: 1px solid $color-white;
-$btn-outline-padding: 10.5px 23px;
 
 // Button Secondary (Light)
 $btn-secondary-bg: $color-white;
 $btn-secondary-text: $color-secondary;
-$btn-secondary-padding: 11.5px 24px;

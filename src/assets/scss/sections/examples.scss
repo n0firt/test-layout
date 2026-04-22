@@ -3,10 +3,11 @@
 
 .section-examples {
   position: relative;
+  margin-top: 130px;
 
   &__background {
-    @include wide-section(half, half);
+    @include wide-section(half, full);
     @include section-bg;
-    background-color: $color-light-bg;
+    background-color: $color-primary;
   }
 }

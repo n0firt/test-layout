@@ -1,66 +1,183 @@
-@use "sass:list";
-@use "sass:string";
-
-@function remove-spaces($string) {
-  $index: string.index($string, " ");
-
-  @if $index {
-    @return string.slice($string, 1, $index - 1) +
-      remove-spaces(string.slice($string, $index + 1));
-  }
-
-  @return $string;
+/* --- Cormorant --- */
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Bold.ttf") format("truetype");
 }
 
-$fonts-config: (
-  "Cormorant": (
-    ("LightItalic", 300, "italic"),
-    ("Italic", 400, "italic"),
-    ("MediumItalic", 500, "italic"),
-    ("SemiBoldItalic", 600, "italic"),
-    ("BoldItalic", 700, "italic"),
-    ("Light", 300, "normal"),
-    ("Regular", 400, "normal"),
-    ("Medium", 500, "normal"),
-    ("SemiBold", 600, "normal"),
-    ("Bold", 700, "normal"),
-  ),
-  "Cormorant Infant": (
-    ("LightItalic", 300, "italic"),
-    ("Italic", 400, "italic"),
-    ("MediumItalic", 500, "italic"),
-    ("SemiBoldItalic", 600, "italic"),
-    ("BoldItalic", 700, "italic"),
-    ("Light", 300, "normal"),
-    ("Regular", 400, "normal"),
-    ("Medium", 500, "normal"),
-    ("SemiBold", 600, "normal"),
-    ("Bold", 700, "normal"),
-  ),
-  "PT Sans": (
-    ("Italic", 400, "italic"),
-    ("BoldItalic", 700, "italic"),
-    ("Regular", 400, "normal"),
-    ("Bold", 700, "normal"),
-  ),
-);
+/* --- Cormorant Infant --- */
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-LightItalic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-Italic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-MediumItalic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-SemiBoldItalic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-BoldItalic.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-Light.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-Medium.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-SemiBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant/CormorantInfant-Bold.ttf")
+    format("truetype");
+}
 
-@each $family-name, $variants in $fonts-config {
-  $family-path: remove-spaces($family-name);
-
-  @each $variant in $variants {
-    $variant-name: list.nth($variant, 1);
-    $variant-weight: list.nth($variant, 2);
-    $variant-style: list.nth($variant, 3);
-
-    $file-path: "../fonts/#{$family-path}/#{$family-path}-#{$variant-name}.ttf";
-
-    @font-face {
-      font-family: "#{$family-name}";
-      font-style: $variant-style;
-      font-weight: $variant-weight;
-      font-display: swap;
-      src: url($file-path) format("truetype");
-    }
-  }
+/* --- PT Sans --- */
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/PTSans/PTSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/PTSans/PTSans-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/PTSans/PTSans-Bold.ttf") format("truetype");
 }

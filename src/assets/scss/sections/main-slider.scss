@@ -2,12 +2,98 @@
 @use "@/assets/scss/mixins" as *;
 
 .section-main-slider {
+  display: flex;
   position: relative;
   padding: 168px 0 53px 0;
+  min-height: 100vh;
 
   &__background {
     @include wide-section(half, full);
     @include section-bg;
-    background: linear-gradient(#000, transparent);
+
+    &-image {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      transition: opacity 0.4s ease-in-out;
+      opacity: 0;
+
+      &--active {
+        opacity: 1;
+      }
+    }
+
+    &-filter {
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background: linear-gradient(#ffffff, transparent);
+    }
+  }
+
+  &__content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__carousel {
+    min-width: 0;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__counter {
+    font-size: 13px;
+  }
+
+  &__left-arrow,
+  &__right-arrow {
+    cursor: pointer;
+
+    &-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__slide-title {
+    font-family: $font-accent;
+    font-size: 78px;
+    line-height: 1;
+    color: $color-secondary;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+
+    span {
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  &__slide-text {
+    margin-top: 24px;
+    color: $color-secondary;
+    max-width: 477px;
+  }
+
+  &__slide-button {
+    margin-top: 48px;
   }
 }

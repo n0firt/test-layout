@@ -1,7 +1,15 @@
 import { defineConfig } from "vite";
+import inject from "@rollup/plugin-inject";
 import path from "path";
 
 export default defineConfig({
+  plugins: [
+    inject({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
+
   base: "./",
 
   resolve: {

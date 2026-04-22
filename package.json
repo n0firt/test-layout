@@ -20,10 +20,13 @@
   },
   "homepage": "https://github.com/n0firt/test-layout#readme",
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
     "sass": "^1.99.0",
     "vite": "^8.0.9"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.1.4"
+    "@splidejs/splide": "^4.1.4",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
   }
 }

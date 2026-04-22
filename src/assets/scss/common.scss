@@ -1,6 +1,28 @@
+@use "@/assets/scss/variables" as *;
+
 body {
   min-height: 100vh;
+  font-size: $font-size-base;
+  font-family: $font-primary;
 }
 main section {
   min-height: 300px;
+}
+.button {
+  padding: $btn-padding;
+  font-size: $btn-text-size;
+  cursor: pointer;
+  line-height: 17px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.button-primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-text;
+  border: 1px solid $btn-primary-bg;
+}
+.button-secondary {
+  background-color: $btn-secondary-bg;
+  color: $btn-secondary-text;
+  border: 1px solid $btn-secondary-bg;
 }

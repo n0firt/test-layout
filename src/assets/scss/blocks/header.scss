@@ -8,12 +8,50 @@
   top: 0;
   height: 152px;
   width: 100%;
+  padding: 56px 0;
   color: $color-white;
 
   &__content {
     @include container;
     display: flex;
+    align-items: center;
     justify-content: end;
-    padding: 56px 0;
+    gap: 17px;
+  }
+
+  &__cart {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $color-white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    &-icon {
+      display: block;
+      width: 18.42px;
+      height: 14.5px;
+      color: $color-primary;
+      margin-top: 1.75px;
+      margin-right: 2.25px;
+    }
+
+    &-counter {
+      display: grid;
+      align-items: top;
+      justify-items: center;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 1;
+      background: $color-accent;
+      color: $color-white;
+    }
   }
 }
