@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <title>Test Layout</title>
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor.js">
+    <link rel="stylesheet" crossorigin href="./assets/vendor.css">
+    <link rel="stylesheet" crossorigin href="./assets/index.css">
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__logo">
+        <span>LOGO</span>
+      </div>
+      <div class="main-nav__list">
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-1"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-2"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-3"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-4"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-5"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-6"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-7"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-8"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-9"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+
+        <a class="main-nav__list-item" href="#">
+          <svg class="main-nav__list-item-icon">
+            <use href="./assets/sprite.svg#icon-nav-menu-10"></use>
+          </svg>
+          <div class="main-nav__list-item-text"></div>
+        </a>
+      </div>
+      <div class="main-nav__search">
+        <svg class="main-nav__search-icon">
+          <use href="./assets/sprite.svg#icon-nav-menu-search"></use>
+        </svg>
+        <input class="main-nav__search-input" type="text" placeholder="Поиск" />
+      </div>
+    </nav>
+
+    <main>
+      <header class="header">
+        <div class="header__content">
+          <div class="header__button button button-primary">Заказать замер</div>
+          <div class="header__cart">
+            <svg class="header__cart-icon">
+              <use href="./assets/sprite.svg#icon-header-cart"></use>
+            </svg>
+            <div class="header__cart-counter">3</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section-main-slider">
+        <div class="section-main-slider__background">
+          <picture>
+            <img
+              class="section-main-slider__background-image section-main-slider__background-image--active"
+              src="./assets-raw/images/slider-image-1.jpg"
+              alt=""
+              data-slide-id="0"
+            />
+            <img
+              class="section-main-slider__background-image"
+              src="https://picsum.photos/1920/1080?random=1"
+              alt=""
+              crossorigin="anonymous"
+              data-slide-id="1"
+            />
+            <img
+              class="section-main-slider__background-image"
+              src="https://picsum.photos/1920/1080?random=2"
+              alt=""
+              crossorigin="anonymous"
+              data-slide-id="2"
+            />
+          </picture>
+          <div class="section-main-slider__background-filter"></div>
+        </div>
+
+        <div class="section-main-slider__content">
+          <div class="section-main-slider__carousel">
+            <div
+              class="section-main-slider__slide"
+              data-img="/assets-raw/images/slider-image-1.jpg"
+            >
+              <div class="section-main-slider__slide-title">
+                Купите <br />
+                <span>Что-то</span><br />
+                и еще <span>шторы</span>
+              </div>
+              <div class="section-main-slider__slide-text">
+                «Lorem» — производитель изделий для внутренней и внешней lorem
+              </div>
+              <div
+                class="section-main-slider__slide-button button button-secondary"
+              >
+                Калькулятор
+              </div>
+            </div>
+            <div class="section-main-slider__slide">
+              <div class="section-main-slider__slide-title">Test Title</div>
+              <div class="section-main-slider__slide-text">Test text</div>
+            </div>
+            <div class="section-main-slider__slide">
+              <div class="section-main-slider__slide-title">Test Title 2</div>
+              <div class="section-main-slider__slide-text">Test text 2</div>
+            </div>
+          </div>
+          <div class="section-main-slider__controls">
+            <button class="section-main-slider__left-arrow">
+              <svg class="section-main-slider__left-arrow-icon">
+                <use href="./assets/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <div class="section-main-slider__counter">
+              <span class="section-main-slider__counter-current">1</span>/<span
+                class="section-main-slider__counter-length"
+                >3</span
+              >
+            </div>
+            <button class="section-main-slider__right-arrow">
+              <svg class="section-main-slider__left-arrow-icon">
+                <use href="./assets/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-popular">
+        <div class="section-popular__background"></div>
+        <div class="section-popular__background-2"></div>
+        Популярное
+      </section>
+
+      <section class="section-best-offers">Лучшие предложения</section>
+
+      <section class="section-step-form">
+        Ваш помощник в выборе солнцезащиты
+      </section>
+
+      <section class="section-partnership">
+        <div class="section-partnership__background"></div>
+        Дилерам и Дизайнерам / Коммерческим покупателям
+      </section>
+
+      <section class="section-sales">
+        <div class="section-sales__background"></div>
+        Акции
+      </section>
+
+      <section class="section-examples">
+        <div class="section-examples__background"></div>
+        Примеры работ
+      </section>
+
+      <footer class="footer">
+        <div class="footer__background"></div>
+        Footer
+      </footer>
+    </main>
+
+  </body>
+</html>
